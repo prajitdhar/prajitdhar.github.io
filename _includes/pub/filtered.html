@@ -1,0 +1,55 @@
+{% assign pubs = include.publications | where: "toappear", true %}
+
+{% if pubs.size > 0 %}
+<h2 style="margin-top:20px;">to appear</h2>
+{% for pub in pubs %}
+<div class="publication" lang="{{pub.lang}}">{% include pub/{{ pub.type }}.html p=pub %}
+	<p>
+	{% if pub.doi %}
+	<a href="http://dx.doi.org/{{pub.doi}}">[doi]</a>
+	{% endif %}
+	{% if pub.iurl %}
+	<a href="{{pub.iurl}}">[paper]</a>
+	{% endif %}
+	{% if pub.downloads %}
+	{% for d in pub.downloads %}
+	<a href="{{d.url}}">[{{d.desc}}]</a>
+	{% endfor %}
+	{% endif %}
+	</p>
+{% endfor %}
+{% endif %}
+
+{% assign years = include.publications | map: "year" | uniq | sort | reverse %}
+
+{% for y in years %}
+
+{% assign thisyear = include.publications | where: "year", y | where_exp: "item", "item.toappear != true" %}
+
+{% if thisyear.size == 0 %}
+{% continue %}
+{% endif %}
+
+{% assign thisyear = thisyear | sort: 'month', 'first' | reverse %}
+
+<h2>{{ y }}</h2>
+
+{% for pub in thisyear %}
+
+<div class="publication" lang="{{pub.lang}}">
+	{%- include pub/{{ pub.type }}.html p=pub -%}
+	<p>
+	{% if pub.doi %}
+	<a href="http://dx.doi.org/{{pub.doi}}">[doi]</a>
+	{% endif %}
+	{% if pub.iurl %}
+	<a href="{{pub.iurl}}">[paper]</a>
+	{% endif %}
+	{% if pub.downloads %}
+	{% for d in pub.downloads %}
+	<a href="{{d.url}}">[{{d.desc}}]</a>
+	{% endfor %}
+	{% endif %}
+	</p>
+{% endfor %}
+{% endfor %}
