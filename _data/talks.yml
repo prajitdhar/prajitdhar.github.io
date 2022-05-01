@@ -1,0 +1,63 @@
+conference:
+
+  - title: "The Effect of Vocabulary Overlap on Linguistic Probing Tasks for Neural Language Models"
+    with: Arianna Bisazza
+    date: 2020-01-30
+    venue:
+      label: 30th Meeting of Computational Linguistics in The Netherlands (CLIN 30)
+      link: https://clin30.sites.uu.nl/
+      city: Utrecht
+      country: The Netherlands
+      lang: en
+
+  - title: "Does Syntactic Knowledge Transfer Cross-Lingually in Multilingual Neural Language Models?"
+    with:
+      - Arianna Bisazza
+      - Wessel Kraaij
+    date: 2019-01-31
+    venue:
+      label: 29th Meeting of Computational Linguistics in The Netherlands (CLIN 29)
+      link: https://www.let.rug.nl/clin29/index.php
+      city: Groningen
+      country: The Netherlands
+      lang: en
+
+  - title: "Novel Compound Predictor - Learning to Distinguish the Plausible from the Implausible"
+    with: Lonneke van der Plas
+    date: 2019-01-31
+    venue:
+      label: 29th Meeting of Computational Linguistics in The Netherlands (CLIN 29)
+      link: https://www.let.rug.nl/clin29/index.php
+      city: Groningen
+      country: The Netherlands
+      lang: en
+
+  - title: "Does Syntactic Knowledge in Multilingual Language Models Transfer Across Languages?"
+    with: Arianna Bisazza
+    date: 2018-11-01
+    venue:
+      label: "2018 EMNLP Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP"
+      link: https://aclanthology.org/volumes/W18-54/
+      city: Brussels
+      country: Belgium
+      lang: en
+
+  - title: "Evaluation of Information Retrieval Systems"
+    with: Janis Pagel
+    date: 2017-05-15
+    venue:
+      label: "27th Conference of Computational Linguistic Students (TaCoS) 2017"
+      link: https://twitter.com/27_TaCoS
+      city: Stuttgart
+      country: Germany
+      lang: en
+
+  - title: "An Information Retrieval System for Product Reviews"
+    with: Janis Pagel
+    date: 2016-11-17
+    venue:
+      label: "60th Student's Conference for Linguistics (StuTS) 2016"
+      link: https://60.stuts.de/
+      city: Heidelberg
+      country: Germany
+      lang: en

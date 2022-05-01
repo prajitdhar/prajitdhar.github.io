@@ -1,0 +1,25 @@
+regular:
+
+  - title: "Introduction to Neural Networks"
+    inst: groningen
+    date: "September 2021 - January 2022"
+    program: B.Sc. Information Science
+    with:
+      - Arianna Bisazza
+    role: Teaching Assistant
+
+  - title: "Introduction to Neural Networks"
+    inst: groningen
+    date: "September 2020 - January 2021"
+    program: B.Sc. Information Science
+    with:
+      - Arianna Bisazza
+    role: Teaching Assistant
+
+  - title: "Introduction to Programming II"
+    inst: groningen
+    date: "October 2019 - January 2020"
+    program: B.Sc. Information Science
+    with:
+      - Arianna Bisazza
+    role: Teaching Assistant
