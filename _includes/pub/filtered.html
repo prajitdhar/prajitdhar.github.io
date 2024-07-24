@@ -1,8 +1,24 @@
-{% assign pubs = include.publications | where: "toappear", true %}
+{% assign toappear = include.publications | where: "toappear", true %}
 
-{% if pubs.size > 0 %}
+{% if toappear.size > 0 %}
 <h2 style="margin-top:20px;">To appear</h2>
-{% for pub in pubs %}
+{% for pub in toappear %}
+<div class="publication" lang="{{pub.lang}}">{% include pub/{{ pub.type }}.html p=pub %}
+	<p>
+	{% if pub.downloads %}
+	{% for d in pub.downloads %}
+	<a href="{{d.url}}">[{{d.desc}}]</a>
+	{% endfor %}
+	{% endif %}
+	</p>
+{% endfor %}
+{% endif %}
+
+{% assign underreview = include.publications | where: "underreview", true %}
+
+{% if underreview.size > 0 %}
+<h2 style="margin-top:20px;">Under review</h2>
+{% for pub in underreview %}
 <div class="publication" lang="{{pub.lang}}">{% include pub/{{ pub.type }}.html p=pub %}
 	<p>
 	{% if pub.downloads %}
@@ -18,7 +34,7 @@
 
 {% for y in years %}
 
-{% assign thisyear = include.publications | where: "year", y | where_exp: "item", "item.toappear != true" %}
+{% assign thisyear = include.publications | where: "year", y | where_exp: "item", "item.toappear != true" | where_exp: "item", "item.underreview != true" %}
 
 {% if thisyear.size == 0 %}
 {% continue %}

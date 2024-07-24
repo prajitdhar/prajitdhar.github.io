@@ -1,4 +1,68 @@
+invited:
+
+  - title: "Evaluating factors influencing cross-lingual syntactic transfer in multilingual networks"
+    date: 2023-05-11
+    venue:
+      label: Invited talk at the Colloquium of Prof. Dr. Shravan Vasishth
+      city: Potsdam
+      country: Germany
+      lang: en
+
+  - title: "Evaluating the Effect of Context in Processing Novel Noun-Noun Compounds"
+    date: 2023-07-10
+    venue:
+      label: Invited talk at the Colloquium of Prof. Dr. Milena Rabovsky
+      city: Potsdam
+      country: Germany
+      lang: en
+
+  - title: "Evaluating Pre-training Objectives for Low-Resource Translation into Morphologically Rich Languages"
+    date: 2022-02-01
+    venue:
+      label: Invited talk at the Colloquium of Prof. Dr. Suzan Verberne
+      city: Leiden
+      country: The Netherlands
+      lang: en
+
 conference:
+
+  - title: "How do Large Language Models Interpret Noun-Noun Compounds?"
+    date: 2024-09-07
+    venue:
+      label: 30th AMLaP conference, Architectures and Mechanisms for Language Processing
+      link: https://amlap2024.ed.ac.uk/
+      city: Edinburgh
+      country: United Kingdom
+      lang: en
+
+  - title: "NMT-Eye: Towards Multilingual Comprehension with Hybrid Text Saliency Models"
+    with: Ekta Sood
+    date: 2024-06-21
+    venue:
+      label: 2nd Workshop on Eye Movements and the Assessment of Reading Comprehension
+      link: https://multipleye.eu/workshop-on-eye-movements-and-assessment-of-reading-comprehension/
+      city: Zurich
+      country: Switzerland
+      lang: en
+
+  - title: "InteRead: An Eye Tracking Dataset of Interrupted Reading"
+    with: Francesca Zermiani
+    date: 2024-06-21
+    venue:
+      label: 2nd Workshop on Eye Movements and the Assessment of Reading Comprehension
+      link: https://multipleye.eu/workshop-on-eye-movements-and-assessment-of-reading-comprehension/
+      city: Zurich
+      country: Switzerland
+      lang: en
+
+  - title: "Processing and depicting novel compounds: a comparison of compositionality processing in children and generative machines"
+    date: 2023-05-16
+    venue:
+      label: 3rd International Conference 'Language in the Human-Machine Era' (LITHME)
+      link: https://lithme.eu/conference/
+      city: Leeuwarden
+      country: The Netherlands
+      lang: en
 
   - title: "The Effect of Vocabulary Overlap on Linguistic Probing Tasks for Neural Language Models"
     with: Arianna Bisazza
