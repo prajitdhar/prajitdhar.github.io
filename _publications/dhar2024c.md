@@ -11,6 +11,7 @@ author:
 - Andreas Bulling
 - Maria Wirzberger
 journal: "Frontiers in Cognition, section Attention"
-underreview: true
+doi: 10.3389/fcogn.2024.1434642
+volume: 3
 
 ---
