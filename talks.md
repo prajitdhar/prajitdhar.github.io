@@ -8,9 +8,9 @@ permalink: /talks/
 
 ## Invited Talks
 
-{% assign talks = site.data.talks.invited | group_by_exp: "item", "item.date | date: '%Y'" | sort: "item" %}
+{% assign talks = site.data.talks.invited | group_by_exp: "item", "item.date | date: '%Y'" %}
 
-{% for y in talks %} 
+{% for y in talks %}
 
 ### {{ y.name }}
 
@@ -27,13 +27,13 @@ permalink: /talks/
 
 ## Conference Talks
 
-{% assign talks = site.data.talks.conference | group_by_exp: "item", "item.date | date: '%Y'" | sort: "item" %}
+{% assign talks = site.data.talks.conference | group_by_exp: "item", "item.date | date: '%Y'" %}
 
-{% for y in talks %} 
+{% for y in talks %}
 
 ### {{ y.name }}
 
-{% assign thisyear = y.items | sort: "date" | reverse %}
+{% assign thisyear = y.items | sort: "date" %}
 
 {% for pub in thisyear %}
 {% include talks.md talk=pub %}
